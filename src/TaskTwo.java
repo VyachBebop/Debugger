@@ -7,7 +7,7 @@ public class TaskTwo {
         int[] numbers = {1, 2, 3, 4, 5};
         int sum = 0;
 
-        for (int i = 0; i <= numbers.length - 1; i++) { // Цикл заходил за границу массива
+        for (int i = 0; i < numbers.length; i++) { // Цикл заходил за границу массива
             sum += numbers[i];
         }
         System.out.println("Сумма чисел: " + sum);

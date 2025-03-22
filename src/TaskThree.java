@@ -7,7 +7,7 @@ public class TaskThree {
         System.out.println(n + "! = " + result);
     }
     public static int computeFactorial(int n) {
-        if (n == 1) { // (n == 2) Ошибка факториал должен считаться от 1 до n
+        if (n == 0 || n == 1) { // (n == 2) Ошибка факториал должен считаться от 1 до n
             return 1;
         } else {
             return n * computeFactorial(n - 1);
